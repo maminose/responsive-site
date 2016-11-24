@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Abel);
+// font-family
+
+$baseFontFamily: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+$bgColor01: #ececec;
+$bgColor02: #f7f7f7;
+$fontColor: #0a0101;
+$unit1: 15px;
+$unit2: 30px;
+$unit3: 45px;
+
+*, *:before, *:after {/*memo:先生に教えていただいたbox-sizing*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  letter-spacing: .1em;
+}
+
+header {
+  background-image: url("top_img.jpg");
+  background-size: cover;
+  height: 500px;
+  background-position: center;
+}
+
+main {
+  text-align: center;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.box {
+  width: 33%;
+  background-color: $bgColor01;
+  margin: 1.4%;/*memo:marginとwidthあわせて、100%にする*/
+}
+
+.box-title {
+  padding:$unit2;
+}
+
+.bg{
+  background-color: $bgColor02;
+}
+
+.text {
+  padding: $unit2;
+  color: $fontColor;
+}
+
+footer {
+  text-align: center;
+ padding: $unit3 0;
+  margin: $unit3 0;
+}
+
+.button a{
+  width:25%;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  display: inline-block;
+  padding: 16px 0 20px;
+  color: $bgColor01;
+  background-color: #7D0005;
+  text-decoration: none;
+}
+a:hover{
+  color: #fff;
+  background-color: #ae0007;
+}
+
+@media (max-width: 768px) {
+
+header{
+  height: 250px;
+}
+
+  .flex-container {
+    display: -webkit-flex; /* Safari */
+    display: block;
+    text-align: center;
+  }
+
+  .box {
+    width: 80%;
+    margin: 10% auto;
+  }
+
+}
+
+
+ 
